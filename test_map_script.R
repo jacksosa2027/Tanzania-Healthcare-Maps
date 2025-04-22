@@ -3,6 +3,8 @@
 library(ggplot2)
 library(ggmap)
 
+tanzania_coordinates <- read.csv("tanzania_coordinates.csv")
+
 #Add a random value to simulate a choropleth map coloring
 tanzania_coordinates$rand_score <- runif(nrow(tanzania_coordinates), min = 1, max = 100)  
 
